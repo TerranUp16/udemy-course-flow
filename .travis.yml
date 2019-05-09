@@ -3,6 +3,8 @@ services:
   - docker
 
 language: node_js
+node_js:
+  - lts/*
 
 before_install:
   - docker build -t terranup16/udemy-course-flow -f Dockerfile.dev .
